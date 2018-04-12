@@ -1,42 +1,69 @@
-
 #include "funciones.h"
-float suma(float numero1,float numero2)    //Funcion para poder sumar dos variables
+float suma(float numero1,float numero2)
 {
-    float suma;
-    suma=numero1+numero2;
-    return suma;
+   float resultado;
+   resultado = numero1 + numero2;
+
+   return resultado;
 }
-float resta(float numero1,float numero2)   //Funcion para poder restar dos variables
+float resta(float numero1,float numero2)
 {
-    float resta;
-    resta=numero1-numero2;
-    return resta;
+  float resultado = numero1 - numero2;
+  return resultado;
 }
-float division(int numero1,int numero2) //Funcion para poder dividir dos variables
+float division(float numero1,float numero2)
 {
-    float division;
-    division=(float)numero1/numero2;
-
-    return division;
+  float resultado = numero1/numero2;
+  return resultado;
 }
-float multiplicacion(float numero1,float numero2) //Funcion para obtener el producto de dos variables
+float multiplicacion(float numero1,float numero2)
 {
-  float producto;
-  producto=numero1*numero2;
-  return producto;
-
+  float resultado = numero1*numero2;
+  return resultado;
 }
-int factorial(int numero1)    //Funcion para obtener el factorial de una variable
+int factorial(float numero1)
 {
-    int i;
-    long int factorial=1;
+  int i;
+  long int factorial = 1;
+  for(i=numero1;i>0;i--)
+  {
+    factorial = factorial*i;
+  }
+  return factorial;
+}
+void mostrarResultado(char mensaje[],float numero)
+{
+   int partEntera;
+   double partDecimal;
 
+   partEntera = numero/1;
+   partDecimal = numero-partEntera;
 
-    for(i=numero1;i>0;i--)
-    {
-      factorial=factorial*i;
+   if(partDecimal>0)
+   {
+     printf("%s %.2f ",mensaje,numero);
+   }
+   else
+   {
+     printf("%s %d ",mensaje,partEntera);
+   }
+}
+int validarFactoreo(float numero)
+{
+   int retorno;
+   int parteEntera;
+   double parteDecimal;
 
-    }
+   parteEntera = numero/1;
+   parteDecimal = numero-parteEntera;
 
-    return factorial;
+   if(parteDecimal==0 && numero>0)
+   {
+     retorno = 1;
+   }
+   else
+   {
+     retorno = 0;
+   }
+   return retorno;
 }

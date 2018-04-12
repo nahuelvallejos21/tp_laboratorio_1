@@ -40,6 +40,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="pedirYvalidar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pedirYvalidar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

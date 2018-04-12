@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1503611918 source:c:\users\vallejos gustavo\desktop\tp_1_cascara\main.c
+1523564849 source:c:\users\vallejos gustavo\desktop\nueva carpeta (2)\tp_1_cascara\funciones.c
+	"funciones.h"
+
+1523566071 c:\users\vallejos gustavo\desktop\nueva carpeta (2)\tp_1_cascara\funciones.h
+
+1523026726 source:c:\users\vallejos gustavo\desktop\nueva carpeta (2)\tp_1_cascara\pediryvalidar.c
+	<stdio.h>
+	"pedirYvalidar.h"
+
+1523026726 c:\users\vallejos gustavo\desktop\nueva carpeta (2)\tp_1_cascara\pediryvalidar.h
+
+1523565779 source:c:\users\vallejos gustavo\desktop\nueva carpeta (2)\tp_1_cascara\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
-
-1457052376 c:\users\vallejos gustavo\desktop\tp_1_cascara\funciones.h
-
-1504811255 source:c:\users\vallejos gustavo\desktop\utn\tp_1_cascara\main.c
-	<stdio.h>
-	<stdlib.h>
-	"funciones.h"
-
-1504809130 c:\users\vallejos gustavo\desktop\utn\tp_1_cascara\funciones.h
-
-1504809130 source:c:\users\vallejos gustavo\desktop\utn\tp_1_cascara\funciones.c
-	"funciones.h"
+	"pedirYvalidar.h"
 
