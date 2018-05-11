@@ -3,24 +3,16 @@
 #include "funciones.h"
 #define TAM 20
 
-
 int main()
 {
-    int i;
     char seguir='s';
     int opcion=0;
-    EPersona alumno[TAM];
-    int aux;
+    EPersona lista[TAM];
 
-
-    for(i=0;i<TAM;i++)
-    {
-      alumno[i].estado=0;
-    }
+    inicializarEstados(lista,TAM);
 
     while(seguir=='s')
     {
-        printf("                  \n");
         printf("1- Agregar persona\n");
         printf("2- Borrar persona\n");
         printf("3- Imprimir lista ordenada por  nombre\n");
@@ -32,17 +24,17 @@ int main()
         switch(opcion)
         {
             case 1:
-                cargarPersona(alumno,TAM);
+                cargarPesona(lista,TAM);
                 break;
             case 2:
-                borrarPersona(alumno, TAM);
+                borrarPersona(lista,TAM);
                 break;
             case 3:
-                ordenarPersonas(alumno, TAM);
+                mostrarPersonas(lista,TAM);
                 break;
             case 4:
-                printf("\nNo realizado");
-               break;
+                graficoEdades(lista,TAM);
+                break;
             case 5:
                 seguir = 'n';
                 break;
